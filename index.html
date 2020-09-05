@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="head-container">
+                <div class="logo">
+                        <img src="https://drive.google.com/uc?id=1gSzjeJSEvNO4STj8f-xiiM0iS9tt1x8_" alt="Logo Tigo">
+                        <div>Servicio Técnico</div>
+                </div>
+                <div class="main_title">
+                    <h3>Registro de Gestiones Diarias</h3>
+                    <h5 class="verde">ST - Empresarial</h5>
+                </div>
+                <div class="info">
+                    <div class="user">
+                        <img src="https://drive.google.com/uc?id=1ySHBg-2ebGTwZZRUN-EdndyBjNIlpPnA" alt="icon">
+                        <div>Isaac G.</div>
+                    </div>
+                    <div class="icon">
+                        <img src="https://drive.google.com/uc?id=1W6rId2QTFeTVlPiWq_RG8MjNdEaHEn6y" alt="icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="navigation">
+                <button type="button" class="nav_item" onclick="showWin('new',this)">NUEVO</button>
+                <button type="button" class="nav_item" onclick="showWin('list',this)">LISTA</button>
+                <button type="button" class="nav_item">OTROS</button>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="mainCard" class="main_card">
+        <form onsubmit="register(this);">
+        <h2>Nuevo Trámite</h2>
+        <br>
+        <br>
+        <label for="tipo">Tipo de gestión:</label>
+        <div>
+            <input class="card_input" type="text" name="tipo" id="tipo" list="tipos" autocomplete="off" required>
+            <div class="note">Seleccione un valor de la lista</div>
+            <datalist id="tipos">
+                <option value="Traslado de Unidad">Traslado</option>
+                <option value="Traslados de Documentos de area">Traslado</option>
+                <option value="Traslado de otros equipos">Traslado</option>
+                <option value="Traslados de Publicidad o Papeleria">Traslados</option>
+                <option value="Traslado de Accesorios">Traslado</option>
+            </datalist>
+        </div>
+        <br>
+        <label for="who">Solicitante:</label>
+        <div>
+            <input class="card_input" type="text" name="who" id="who" autocomplete="off" required>
+        </div>
+        <br>
+        <label for="adress">Ubicación:</label>
+        <div>
+            <textarea class="card_input wide" name="adress" id="adress" cols="60" rows="2" autocomplete="off" required></textarea>
+            <div class="note">Indique la dirección</div>
+        </div>
+        <br>
+        <label for="comments">Comentarios:</label>
+        <div>
+            <textarea class="card_input wide" name="comments" id="comments" cols="60" rows="4"></textarea>
+        </div>
+        <input class="register" type="submit" value="Aceptar">
+        </form>
+    </div>
+    <div id="cardss">
+        
+        
+    </div>
+    <footer>
+        <div class="feet"></div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
